@@ -1,0 +1,59 @@
+.category-details{
+    height: fit-content;
+    width: 70px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    padding-top: 0 15px;
+    
+    
+}
+
+.title{
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: black;
+}
+
+.title:hover{
+    color: var(--flipkart-lightblue);;
+}
+
+.category-content{
+    display:flex;
+    height: fit-content;
+    max-height: max-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+
+img{
+    height: 35px;
+    width: 35px;
+}
+
+
+
+a:link{
+ text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none
+}
+
+a:active{
+    text-decoration: none;
+}

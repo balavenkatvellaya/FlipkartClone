@@ -1,0 +1,56 @@
+.Home{
+    height: 100vh;
+    width: 100%;
+    display: relative;
+    justify-content: center;
+}
+
+.cauroselbar{
+    height: auto;
+    width: 80%;
+}
+
+.caurosel-container{
+    height: 280px;
+    position: relative;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.productbar{
+    display: flex;
+    height: 12vh;
+    width: auto;
+}
+
+.Home-box{
+    position: relative;
+    top: 56px;
+    height: fit-content;
+    padding-top: 30px;
+    width: 100%
+}
+
+.product-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+
+}
+.product-title{
+    height: 280px;
+    width: 80%;
+    box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 16%);
+}
+
+.product-img{
+    height: auto;
+    width: 20%;
+}

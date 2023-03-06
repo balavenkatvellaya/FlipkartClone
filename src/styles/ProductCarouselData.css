@@ -1,0 +1,34 @@
+.product-img{
+    height: 50px;
+    width: 50px;
+}
+
+.carouselpdt{
+    max-height: 360px;
+    padding: 25px;
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.carouselpdt:hover{
+    transform: scale(1.1);
+}
+
+.product-img{
+    height: 150px;
+    width: 150px;
+}
+
+.pdt-title{
+    padding-top: 10px;
+    height: 50px;
+    width: auto;
+}
+
+.pdt-shopnow{
+    font-weight: 300;
+    color: #388e3c;
+    font-size: 14px;
+}
