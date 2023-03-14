@@ -1,0 +1,19 @@
+.outersearch {
+  height: fit-content;
+  width: 444px;
+  background-color: rgba(248, 243, 243, 0.9);
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 563px;
+}
+
+.searchtitle {
+  padding: 20px;
+  color: black;
+}
+
+.searchtitle:hover{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}

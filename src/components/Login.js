@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import "../styles/Login.css";
 import { RxCross2 } from "react-icons/rx";
 import { users } from "../UserData.js";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { login } from "../redux/action";
 
 const Login = ({ isOpen, setIsOpen }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const dispatch = useDispatch();
 
   const [loginType, setLoginType] = useState(true);
 
@@ -25,6 +29,9 @@ const Login = ({ isOpen, setIsOpen }) => {
         });
         break;
       }
+
+      default:
+        return "Please Login";
     }
   };
 
@@ -37,6 +44,7 @@ const Login = ({ isOpen, setIsOpen }) => {
         showToastMessage("success", "Logged In Successfully");
         localStorage.setItem("loggedInUser", JSON.stringify(ispresent[0]));
         setIsOpen(false);
+        dispatch(login(ispresent[0]));
       } else {
         showToastMessage("error", "please check your password");
       }

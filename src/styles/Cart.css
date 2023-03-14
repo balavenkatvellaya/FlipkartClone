@@ -5,23 +5,37 @@
 }
 
 .outercontainer {
-  height: 100vh;
+  height: fit-content;
   width: 100%;
   display: flex;
+  padding-bottom: 50px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .outer {
   height: 150px;
-  width: 50%;
+  width: 80%;
   display: flex;
-  margin: 10px;
+  margin: 30px;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .cartouter {
-  height: fit-content;
-  margin: 150px 0 0 50px;
+  height: 70vh;
+  margin: 0 0 0 50px;
   width: 50%;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .data-img {
@@ -42,7 +56,97 @@
 }
 
 .cartouter-right {
-  height: 200px;
+  height: fit-content;
   width: 40%;
-  margin-top: 150px;
+  margin: 50px 0 0 20px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.quantity {
+  display: flex;
+  height: 20px;
+  width: 70px;
+  margin-top: 20px;
+}
+
+.quantity > p {
+  width: 30px;
+  text-align: center;
+}
+
+.quantitybtn {
+  width: 20px;
+}
+
+.title-price {
+  padding-top: 10px;
+}
+
+.removebox {
+  position: relative;
+  top: 105px;
+  right: 40px;
+  bottom: 30px;
+  height: 25px;
+  width: 100px;
+}
+
+.removebtn {
+  height: 100%;
+  width: 100px;
+  background-color: rgb(253, 155, 85);
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.removebtn:hover {
+  transform: scale(1.1);
+}
+
+.product-itemprice {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deliveryprice {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TotalAmount {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricedetail {
+  padding: 20px;
+}
+
+.placeorder {
+  height: 40px;
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 70%;
+  margin-bottom: 20px;
+}
+
+.placeorderbtn {
+  height: 40px;
+  width: 200px;
+  font-size: 20px;
+  background-color: rgb(253, 155, 85);
+  border-radius: 5px;
+  border: none;
+}
+
+.noitem {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

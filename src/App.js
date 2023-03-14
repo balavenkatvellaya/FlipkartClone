@@ -8,6 +8,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import ProceedPayment from "./pages/ProceedPayment";
 
 function App() {
   const [data, setdata] = useState([]);
@@ -24,16 +27,19 @@ function App() {
   console.log("cart", localStorage.length);
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home Homedata={data} />} />
-        <Route path="/products" element={<Products />} />
-        <Route
-          path="/productdetails/:id"
-          element={<Productdetails Data={data} />}
-        />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
+      <Provider store={store}>
+        <Navbar data={data} />
+        <Routes>
+          <Route path="/" element={<Home Homedata={data} />} />
+          <Route path="/products" element={<Products Data={data} />} />
+          <Route
+            path="/productdetails/:id"
+            element={<Productdetails Data={data} />}
+          />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/proceedpayment" element={<ProceedPayment />} />
+        </Routes>
+      </Provider>
       <ToastContainer />
     </BrowserRouter>
   );

@@ -1,0 +1,79 @@
+.formouteroverlay {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding: 150px 20px 0 20px;
+}
+
+.formlayout {
+  height: 80vh;
+  /* padding-top: 50px; */
+  width: 60%;
+}
+
+.detailform {
+  height: fit-content;
+  width: 100%;
+  padding: 50px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cartouter-right {
+  height: fit-content;
+  width: 40%;
+  margin: 0 20px 0 20px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+form > P {
+  height: 60px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+form > p > input {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.finalbtn {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(253, 155, 85);
+  border: none;
+  border-radius: 5px;
+}
+
+.finalbtndiv {
+  margin-left: 70%;
+}
+
+.address-bar {
+  height: fit-content;
+}
+
+.completebox {
+  height: 40vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.completebox > div {
+  padding: 15px;
+  color: var(--flipkart-lightblue);
+}
+
+.completeboxouter {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
