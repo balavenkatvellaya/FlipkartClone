@@ -21,7 +21,6 @@ const handlingCart = (state = cart, action) => {
           },
         ];
       }
-      break;
 
     case "REMOVEITEM":
       const exist1 = state.find((x) => x.id === product.id);
@@ -51,11 +50,9 @@ const handlingCart = (state = cart, action) => {
       } else {
         return state.filter((x) => x.id !== decrease.id);
       }
-      break;
 
     default:
       return state;
-      break;
   }
 };
 
